@@ -1,5 +1,5 @@
-import { Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Suspense, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -12,9 +12,20 @@ import NotFound from "./pages/NotFound";
 import countries from "./data/countries";
 import "./index.css";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <div className="app-root">
+      <ScrollToTop />
       <Header countries={countries} />
       <main>
         <Suspense>
