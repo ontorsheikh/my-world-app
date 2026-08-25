@@ -1,0 +1,32 @@
+// Approximate recent population figures for Oceania entries.
+const populationOverrides = {
+  AS: 44000,
+  AU: 27000000,
+  CC: 600,
+  CK: 15000,
+  CX: 1700,
+  FJ: 930000,
+  FM: 115000,
+  GU: 154000,
+  KI: 135000,
+  MH: 37000,
+  MP: 43000,
+  NC: 292000,
+  NF: 2000,
+  NU: 1700,
+  NR: 11000,
+  NZ: 5300000,
+  PN: 35,
+  PW: 18000,
+  PG: 10500000,
+  PF: 280000,
+  SB: 740000,
+  TK: 1900,
+  TO: 100000,
+  TV: 11000,
+  VU: 330000,
+  WF: 11000,
+  WS: 225000,
+};
+
+export default populationOverrides;
