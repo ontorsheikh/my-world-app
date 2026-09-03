@@ -56,7 +56,8 @@ export default function Footer() {
               <p>Ontor Sheikh</p>
               <a href="mailto:skontorsheikh1613@gmail.com">
                 skontorsheikh1613@gmail.com
-              </a>
+              </a> 
+             <p>Mob: +880172040904</p> 
             </div>
           </div>
         </div>
