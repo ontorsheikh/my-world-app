@@ -14,7 +14,7 @@ export default function Header({ countries = [] }) {
         <div className="brand">
           <Link to="/" className="logo">
             
-              <img src="/public/gemini-svg.svg"></img>
+              <img src="/gemini-svg.svg"></img>
             
             <span className="logo-copy">
               <strong>Ontor's</strong>

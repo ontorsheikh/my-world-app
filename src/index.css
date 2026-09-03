@@ -81,7 +81,7 @@ html.dark .search-input {
       border-box;
 }
 html.dark .search-results .result:hover {
-  background: #252b4a;
+  background: #ca09df;
 }
 html.dark .main-nav a.active {
   color: white;
@@ -1446,3 +1446,12 @@ html.dark .country-page .symbol-card .label,
 html.dark .country-page .symbol-card .val {
   color: #ffffff;
 }
+.brand .logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+
+
