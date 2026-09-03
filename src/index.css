@@ -81,7 +81,7 @@ html.dark .search-input {
       border-box;
 }
 html.dark .search-results .result:hover {
-  background: #ca09df;
+  background: rgb(220, 129, 230);
 }
 html.dark .main-nav a.active {
   color: white;
