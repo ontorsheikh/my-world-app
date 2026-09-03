@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <!-- ব্যাকগ্রাউন্ড ডিপ ভাইব্রেন্ট গ্রেডিয়েন্ট -->
+    <linearGradient id="bgGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="50%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+
+    <!-- গ্লোব রিং গ্রেডিয়েন্ট -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#93C5FD" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <!-- শ্যাডো ইফেক্ট -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- স্টাইলিশ সফট স্কোয়ার বাউন্ডিং বক্স (App Icon Style) -->
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#bgGlow)" filter="url(#shadow)" />
+
+  <!-- ইনার গ্লো বা হাইলাইট বর্ডার -->
+  <rect x="3.5" y="3.5" width="57" height="57" rx="16.5" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-opacity="0.25" />
+
+  <!-- গ্লোবাল নেটওয়ার্ক লেন্স (World Grid) -->
+  <circle cx="32" cy="32" r="16" fill="none" stroke="url(#ringGrad)" stroke-width="3.5" stroke-linecap="round" />
+  
+  <!-- লম্বালম্বি ও আড়াআড়ি কার্ভড মেরিডিয়ান লাইন -->
+  <path d="M32 14 C25 14 21 22 21 32 C21 42 25 50 32 50 C39 50 43 42 43 32 C43 22 39 14 32 14 Z" fill="none" stroke="url(#ringGrad)" stroke-width="2.5" opacity="0.85" />
+  <line x1="14" y1="32" x2="50" y2="32" stroke="url(#ringGrad)" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- কানেক্টিং ডট বা নোড (মডার্ন টেক ভাইব) -->
+  <circle cx="32" cy="18" r="2.5" fill="#FFFFFF" />
+  <circle cx="44" cy="32" r="2.5" fill="#FFFFFF" />
+  <circle cx="20" cy="32" r="2.5" fill="#FFFFFF" />
+</svg>

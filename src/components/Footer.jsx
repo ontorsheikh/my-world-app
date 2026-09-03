@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div>
             <Link to="/" className="footer-brand">
-              Ontor's World Web
+               Ontor's World Web
             </Link>
             <p>Made for exploring the world · © {new Date().getFullYear()}</p>
           </div>

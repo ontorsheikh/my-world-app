@@ -13,9 +13,9 @@ export default function Header({ countries = [] }) {
       <div className="container nav-row">
         <div className="brand">
           <Link to="/" className="logo">
-            <span className="logo-mark" aria-hidden="true">
-              OW
-            </span>
+            
+              <img src="/public/gemini-svg.svg"></img>
+            
             <span className="logo-copy">
               <strong>Ontor's</strong>
               <span>World Web</span>
