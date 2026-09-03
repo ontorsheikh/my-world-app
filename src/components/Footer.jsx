@@ -57,7 +57,7 @@ export default function Footer() {
               <a href="mailto:skontorsheikh1613@gmail.com">
                 skontorsheikh1613@gmail.com
               </a> 
-             <p>Mob: +880172040904</p> 
+             <p>Mob: +8801720409084</p> 
             </div>
           </div>
         </div>
