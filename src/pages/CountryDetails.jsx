@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async"; // ১. এটি প্রথমে ইমপোর্ট করুন
 import QuickFacts from "../components/QuickFacts";
 import BackButton from "../components/BackButton";
 import mergeCountryData from "../utils/mergeCountryData";
@@ -44,6 +45,12 @@ export default function CountryDetails({ countries = [] }) {
 
   return (
     <div className="container country-page">
+      {/* ২. ডাইনামিক এসইও টাইটেল ও মেটা ট্যাগ এখানে যুক্ত করা হলো */}
+      <Helmet>
+        <title>{country.name} – Capital, Flag & Details | Ontors World</title>
+        <meta name="description" content={`Explore ${country.name}, capital, flag, languages, currency, and national symbols on Ontors World.`} />
+      </Helmet>
+
       <BackButton fallback="/countries" />
       <section className="hero-ctry">
         <img src={country.flag} alt={`${country.name} flag`} />
