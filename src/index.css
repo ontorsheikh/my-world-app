@@ -602,6 +602,7 @@ code {
 .hero-showcase {
   position: relative;
   display: flex;
+  flex-direction: column;
   flex: 0 1 390px;
   align-items: center;
   justify-content: center;
@@ -657,15 +658,19 @@ code {
   animation-delay: -3s;
 }
 .hero-showcase-label {
-  position: absolute;
-  right: -8px;
-  bottom: 28px;
-  max-width: 150px;
+  position: relative; /* absolute থেকে relative করা হলো যাতে ফ্রেমের নিচে স্বাভাবিকভাবে বসে */
+  margin-top: 18px;   /* ছবির সাথে নিচের দূরত্ব বাড়ানোর জন্য */
+  max-width: 220px;
   color: var(--text-h);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.2;
+  text-align: center;
   transform: rotate(-8deg);
+  animation: labelFadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transition: none !important;
+   animation: none !important;
+  
 }
 .hero .hero-actions {
   display: flex;
@@ -1451,6 +1456,21 @@ html.dark .country-page .symbol-card .val {
   height: 40px;
   object-fit: contain;
   display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fade-animation {
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 
